@@ -18,8 +18,9 @@
             var div = $(".circulo");
             div.animate({height: '150px', width: '150px'}, "slow");
             div.animate({top: '+=50px'}, "slow");
+            div.css('border-style', 'solid');
             div.animate({borderWidth: '5px'}, "slow");
-            
+
             div.animate({height: '100px', width: '100px'}, "slow");
             div.animate({top: '-=50px'}, "slow");
             div.animate({borderWidth: '0px'}, "slow");
@@ -31,7 +32,7 @@
         <button type="button" class="btn btn-warning mt-4">Transformar Circulo</button>
     </div>
     <div class="d-flex justify-content-center align-items-center vh-100">
-        <div class="circulo" style="border: 0 solid; border-radius: 50%; background-color: yellow; width: 100px; height: 100px; position: relative;">
+        <div class="circulo" style="border-radius: 50%; background-color: yellow; width: 100px; height: 100px; position: relative;">
         </div>
     </div>
   </body>
